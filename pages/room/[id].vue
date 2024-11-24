@@ -32,7 +32,7 @@ const { data: roomObject } = await useFetch(`/rooms/${id}`, {
 */
 
 
-const title = () => roomObject.value.name;
+const title = () => `Freyja | ${ roomObject.value.name}`;
 const description = () => roomObject.value.description;
 const ogTitle = () => `Freyja | ${ roomObject.value.title} `;
 const ogdescription = () =>  roomObject.value.description;
