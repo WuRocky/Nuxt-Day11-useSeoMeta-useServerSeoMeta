@@ -34,11 +34,11 @@ const { data: roomObject } = await useFetch(`/rooms/${id}`, {
 
 const title = () => `Freyja | ${ roomObject.value.name}`;
 const description = () => roomObject.value.description;
-const ogTitle = () => `Freyja | ${ roomObject.value.title} `;
+const ogTitle = () => `Freyja | ${ roomObject.value.name} `;
 const ogdescription = () =>  roomObject.value.description;
 const ogImage = () => roomObject.value.imageUrl;
 const ogUrl = () => `https://freyja.travel.com.tw/room/ ${ roomObject.value._id } `;
-const twitterTitle = () => `Freyja | ${ roomObject.value.title} `;
+const twitterTitle = () => `Freyja | ${ roomObject.value.name} `;
 const twitterDescription = () => roomObject.value.description;
 const twitterImage = () => roomObject.value.imageUrl ;
 
